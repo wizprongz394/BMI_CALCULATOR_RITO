@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR BODY MASS INDEX CALCULATOR"
+        android:textSize="17dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="@string/hintwt"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/heightft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="@string/hinthtf"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/heightin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="@string/hinthti"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hintbtn"
+        android:layout_marginTop="9dp"
+        android:id="@+id/btncal"
+        android:backgroundTint="#15B1C5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/txtresult"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Application will stop working if you dont put the details and try to calculate"
+        android:textSize="10dp"
+        android:layout_marginTop="100dp"/>
+</LinearLayout>
